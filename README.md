@@ -12,3 +12,5 @@ node app.js
 ```
 
 The server will accept requests on `localhost:9999`. Start the `viewer/index.html` to see the results.
+
+Check out the [demo here](http://chk1.github.io/geojson-vectortiles-example/).
