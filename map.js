@@ -5,7 +5,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var mvtSource = new L.TileLayer.MVTSource({
-  url: "http://localhost:9999/{z}/{x}/{y}.pbf"
+  url: "https://ancient-mountain-5677.herokuapp.com/{z}/{x}/{y}.pbf"
 });
 
 map.addLayer(mvtSource);
