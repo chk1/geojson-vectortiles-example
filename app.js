@@ -3,6 +3,7 @@ var tilelive = require('tilelive');
 require('tilelive-bridge').registerProtocols(tilelive);
 
 var app = express();
+var port = process.env.PORT;
 
 tilelive.load('bridge://'+ __dirname +'/map.xml', function(err, source) {
 	if (err) throw err;
@@ -20,8 +21,8 @@ tilelive.load('bridge://'+ __dirname +'/map.xml', function(err, source) {
 		});
 	}
 
-	app.listen(80);
-	console.log("Listening on port 80");
+	app.listen(port);
+	console.log("Listening on port "+port);
 
 	app.get('/:z(\\d+)/:x(\\d+)/:y(\\d+).*', getGrid);
 });

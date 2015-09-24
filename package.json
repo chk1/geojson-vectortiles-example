@@ -4,7 +4,6 @@
   "description": "tilelive-bridge basic web server example for rendering vector tiles",
   "main": "app.js",
   "dependencies": {
-    "leaflet-mapbox-vector-tile": "~0.1.6",
     "express": "~4.13.3",
     "tilelive": "~5.9.0",
     "tilelive-bridge": "~2.0.0"
