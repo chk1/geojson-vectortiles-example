@@ -20,8 +20,8 @@ tilelive.load('bridge://'+ __dirname +'/map.xml', function(err, source) {
 		});
 	}
 
-	app.listen(9999);
-	console.log("Listening on port 9999");
+	app.listen(80);
+	console.log("Listening on port 80");
 
 	app.get('/:z(\\d+)/:x(\\d+)/:y(\\d+).*', getGrid);
 });
